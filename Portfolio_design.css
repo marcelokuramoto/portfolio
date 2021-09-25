@@ -11,6 +11,30 @@ body {
   border-radius: 20px;
   box-shadows: 6px 6px 6px #0E1D2F;
   padding: 64px; /* Margem dos elementos em relação a borda interna(container)*/
+} 
+
+.dark {
+  background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.03%);
+}
+
+.dark .container {
+  background: #333439;
+  color: #f6f6f6;
+}
+
+.dark .projetos {
+  color: #1c1c1c;
+}
+
+.dark .tema button {
+  background: #1c1c1c;
+  color: #ffffff;
+  border: 2px solid #f7f7f7;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
 }
 
 .perfil{
@@ -42,22 +66,50 @@ body {
   font-size: 24px;
 }
 
+.tema button {
+  align-items: flex-end;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 8px 16px;
+  background: #ECF4FF;
+	border-radius: 100px;
+}
+
 .projetos {
   display: flex;
   flex-direction: column;
+  background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
+  margin-top: 20px; 
+  border-radius: 20px;
+  box-shadows: 6px 6px 6px #0E1D2F;
+  padding: 64px;
   /* align-items: center;*/
 }
 
 .rectangle{
-  background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
-    margin-top: 20px; 
-  border-radius: 20px;
-  box-shadows: 6px 6px 6px #0E1D2F;
-  padding: 64px; /* Margem dos elementos em relação a borda interna(container)*/
+ /* Margem dos elementos em relação a borda interna(container)*/
 }
 
 .lista{
   font-size: 15px;
   line-height: 30px;
   font-family: 'Roboto', sans-serif;
+}
+
+.projetos-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projetos-item{
+  list-style-type: none;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.projetos-item a {
+  color: #1c1c1c;
+  text-decoration: none;
 }
