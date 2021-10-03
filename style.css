@@ -1,6 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+
 .menusuperior{
 display: flex;
 flex-direction: row;
@@ -26,7 +27,7 @@ margin: 0px 8px;
 
 
 
-.menusuperior button{
+.menusuperior a{
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
@@ -34,6 +35,7 @@ margin: 0px 8px;
   line-height: 145%;
   color: #090A0A;
   background-color: white;
+  
 
   margin: 0px 10px;
   border: 0px;
@@ -58,6 +60,26 @@ margin: 0px 8px;
   
   color: #090A0A;
   }
+.projetos h2{
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    
+    color: #090A0A;
+}
+.projetos h3{
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  
+  color: #090A0A;
+}
 
 .container{
   background: #090A0A;
@@ -169,7 +191,7 @@ color: #ffffff;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 140%;
   text-align: left;
   color: #1051a5;
@@ -178,7 +200,7 @@ color: #ffffff;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 140%;
   text-align: left;
   color: #090A0A;
@@ -189,7 +211,7 @@ color: #ffffff;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 15px;
   line-height: 145%;
   color: #090A0A;
   text-align: left;
@@ -262,11 +284,15 @@ color: #ffffff;
   margin-bottom: 15px;
 
 }
+
+
 .bottompage{
+
   display: flex;
   flex-direction: row;
 	align-items: flex-start;
   justify-content: space-between;
+  
 
 }
 .col_bottompage{
@@ -275,12 +301,16 @@ color: #ffffff;
 	align-items: flex-start;
   justify-content: right;
   
+  
 }
 .col_bottompage h2{
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
+  bottom: 0;
+  
+  
 }
 .logo{
   max-height: 30px;
@@ -291,7 +321,62 @@ color: #ffffff;
   font-weight: normal;
   font-size: 10px;
   margin: 5px;
+  bottom: 0;
   
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+ }
+
+ .wrapper section {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin: 20px 0;
+ }
+
+ .wrapper section .item_project {
+  padding: 0 2px;
+  transition: 250ms all;
+  margin-right: 20px;
+ }
+ .wrapper section .item_project:hover {
+  margin: 0 40px;
+  transform: scale(1.2);
+ }
+
+ .wrapper section a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  background: black;
+  width: 80px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+ }
+ .wrapper section a:nth-of-type(1) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+ }
+ .wrapper section a:nth-of-type(2) {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+ }
+ @media only screen and (max-width: 600px) {
+  a.arrow__btn {
+  display: none;
+  }
 }
 /* 
 body {

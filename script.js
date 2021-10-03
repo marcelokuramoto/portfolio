@@ -39,3 +39,4 @@ window.onclick = function(event) {
       popup_siemens.style.display = "none";
     }
 }
+
